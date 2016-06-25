@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>icon</key>
+		<string>add_friend_icon_reda.png</string>
+		<key>title</key>
+		<string>雷达加朋友</string>
+		<key>subTitle</key>
+		<string>添加身边的朋友</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>add_friend_icon_addgroup.png</string>
+		<key>title</key>
+		<string>面对面建群</string>
+		<key>subTitle</key>
+		<string>与身边的朋友进入同一个群聊</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>add_friend_icon_scanqr.png</string>
+		<key>title</key>
+		<string>扫一扫</string>
+		<key>subTitle</key>
+		<string>扫描二维码名片</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>add_friend_icon_contacts.png</string>
+		<key>title</key>
+		<string>QQ/手机联系人</string>
+		<key>subTitle</key>
+		<string>添加或邀请通讯录中的朋友</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>add_friend_icon_offical.png</string>
+		<key>title</key>
+		<string>公众号</string>
+		<key>subTitle</key>
+		<string>获取更多资讯和服务</string>
+	</dict>
+</array>
+</plist>

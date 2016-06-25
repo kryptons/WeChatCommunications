@@ -1,0 +1,129 @@
+//
+//  PrefixHeader.pch
+//  MM
+//
+//  Created by xiyang on 16/3/9.
+//  Copyright © 2016年 jinwen.huang. All rights reserved.
+//
+
+#ifndef ______PrefixHeader_pch
+#define ______PrefixHeader_pch
+
+#import <RongIMKit/RongIMKit.h>
+#import <RongIMLib/RongIMLib.h>
+
+#define MMAPP_IM_APPKEY @"pgyu6atqyltqu"
+#define MMAPP_IM_AppSecret @"G9bIt9fteb6Ci"
+
+//#define RONGCLOUD_IM_APPKEY @"e0x9wycfx7flq" //offline key
+#define RONGCLOUD_IM_APPKEY @"z3v5yqkbv8v30" // online key
+
+#define UMENG_APPKEY @"563755cbe0f55a5cb300139c"
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+/**********************Controller******************************/
+#import "MMBaseViewController.h"
+#import "MMTabBarController.h"
+#import "MMConversationListViewController.h"
+#import "MMChatViewController.h"
+#import "MMGroupsTableViewController.h"
+#import "MMAddressBookTableViewController.h"
+#import "MMMineTableViewController.h"
+#import "MMHTML5Controller.h"
+#import "MMNavigationController.h"
+#import "MMAddPublicViewController.h"
+#import "MMSearchFriendViewController.h"
+#import "MMAddFriendViewController.h"
+#import "MMAgreeAddFriendTableViewController.h"
+#import "MMDidJoinGroupViewController.h"
+#import "MMWebViewViewController.h"
+#import "MMMineDetailViewController.h"
+#import "MMSettingViewController.h"
+#import "MMExpresionViewController.h"
+#import "MMMineEditingViewController.h"
+#import "MMNewMessageViewController.h"
+#import "MMLoginViewController.h"
+/**********************View&Cell******************************/
+#import "MMLoginRegisterTextField.h"
+#import "MMAddFriendCell.h"
+#import "MMFriendCell.h"
+#import "MMChatListCell.h"
+#import "MMAgreeFriendCell.h"
+#import "MMGroupCell.h"
+#import "MMFriendBookCell.h"
+#import "MMHTMLCell.h"
+#import "MMHTML5Footer.h"
+#import "MMHTMLButton.h"
+#import "MMUserDetailCell.h"
+#import "MMSettingCell.h"
+#import "MMSettingGroup.h"
+#import "MMSettingItem.h"
+#import "MMMineHelper.h"
+#import "MMHeaderFooterView.h"
+/**********************Model******************************/
+#import "MMAddFriend.h"
+#import "MMLoginInfo.h"
+#import "MMGroupInfo.h"
+#import "MMUserInfo.h"
+#import "MMHTML.h"
+/**********************第三方******************************/
+#import "UIView+JWExtension.h"
+#import "UIImageView+JWExtension.h"
+#import "UIImage+JWExtension.h"
+#import "MJExtension/MJExtension.h"
+#import "NSString+Extension.h"
+#import "JWMenu.h"
+#import <SVProgressHUD.h>
+#import <AFNetworking.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+/*************************tools*******************************/
+#import "MMHttpTools.h"
+#import "MMAFHttpTool.h"
+#import "MMRequestBLL.h"
+#import "RCAnimatedImagesView.h"
+#import "MMTextFieldValidate.h"
+#import "MMDataBaseManager.h"
+#import "MMIMDataSource.h"
+/*************************************************************/
+// 方法的输出
+#define MMLogFunc NSLog(@"%s", __func__)
+
+// 颜色
+#define MMARGBColor(a, r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define MMColor(r, g, b) MMARGBColor(255, (r), (g), (b))
+#define MMGrayColor(v) MMColor((v), (v), (v))
+#define MMCommonBgColor MMGrayColor(215)
+#define MMboldColor MMGrayColor(54)
+#define MMTintColor MMColor(42.0, 185.0, 40.0)
+
+// 随机颜色
+#define MMRandomColor MMColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+
+// 默认背景颜色
+#define     DEFAULT_BACKGROUND_COLOR         MMColor(239.0, 239.0, 244.0)
+
+// 弱引用
+#define MMWeakSelf __weak typeof(self) weakSelf = self
+
+// 将请求的数据写到桌面的plist文件上
+#define MMWriteToPlist(data, fileName) [data writeToFile:[NSString stringWithFormat:@"/Users/xiyang/Desktop/%@.plist", fileName] atomically:YES]
+
+// 屏幕宽高度
+#define MMHeight [UIScreen mainScreen].bounds.size.height
+#define MMWidth [UIScreen mainScreen].bounds.size.width
+
+// 标签按钮背景颜色
+#define MMTagBgColor JWColor(60, 120, 200);
+
+// 约束
+#define MMConstantMargin 20;
+
+// 间隙
+#define MMMargin 10
+
+#endif

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MMAddFriendViewController">
+            <connections>
+                <outlet property="imgIcon" destination="eOc-vr-ddr" id="2F5-p2-fCm"/>
+                <outlet property="lblName" destination="zFf-Kw-Y7L" id="DSb-It-OEc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" userLabel="superView">
+            <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aoe-02-uWM" userLabel="contentView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFs-Yv-hYB" userLabel="分割线">
+                            <rect key="frame" x="0.0" y="79" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="pMs-dC-vJv"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eOc-vr-ddr">
+                            <rect key="frame" x="10" y="15" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="aBJ-pJ-LkC"/>
+                                <constraint firstAttribute="height" constant="50" id="xBB-7A-BZE"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFf-Kw-Y7L">
+                            <rect key="frame" x="80" y="30" width="39.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="eOc-vr-ddr" firstAttribute="leading" secondItem="aoe-02-uWM" secondAttribute="leading" constant="10" id="5A6-bP-aJ8"/>
+                        <constraint firstAttribute="trailing" secondItem="vFs-Yv-hYB" secondAttribute="trailing" id="6Qk-8N-U1p"/>
+                        <constraint firstItem="zFf-Kw-Y7L" firstAttribute="leading" secondItem="eOc-vr-ddr" secondAttribute="trailing" constant="20" id="BuA-nQ-6aL"/>
+                        <constraint firstAttribute="height" constant="80" id="KTY-Oh-bbC"/>
+                        <constraint firstAttribute="bottom" secondItem="vFs-Yv-hYB" secondAttribute="bottom" id="Ufa-OJ-fgQ"/>
+                        <constraint firstItem="eOc-vr-ddr" firstAttribute="centerY" secondItem="aoe-02-uWM" secondAttribute="centerY" id="ksR-Hl-0pw"/>
+                        <constraint firstItem="zFf-Kw-Y7L" firstAttribute="centerY" secondItem="aoe-02-uWM" secondAttribute="centerY" id="pye-ku-SxN"/>
+                        <constraint firstItem="vFs-Yv-hYB" firstAttribute="leading" secondItem="aoe-02-uWM" secondAttribute="leading" id="zbv-8W-5vH"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTr-ar-RwI">
+                    <rect key="frame" x="10" y="100" width="355" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="eYN-zX-hQi"/>
+                    </constraints>
+                    <state key="normal" title="添加好友" backgroundImage="Voip-calling_hover">
+                        <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" backgroundImage="Voip-calling_hover"/>
+                    <state key="highlighted" backgroundImage="Voip-calling_hover"/>
+                    <connections>
+                        <action selector="addFriendClick:" destination="-1" eventType="touchUpInside" id="yLl-bP-Oac"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="oTr-ar-RwI" firstAttribute="top" secondItem="aoe-02-uWM" secondAttribute="bottom" constant="20" id="2ET-RF-9UB"/>
+                <constraint firstItem="oTr-ar-RwI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="2t4-ij-Cbm"/>
+                <constraint firstAttribute="trailing" secondItem="oTr-ar-RwI" secondAttribute="trailing" constant="10" id="Mt9-tO-vWT"/>
+                <constraint firstItem="aoe-02-uWM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eQh-Ey-OlP"/>
+                <constraint firstItem="aoe-02-uWM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iY8-Xk-Cqd"/>
+                <constraint firstAttribute="trailing" secondItem="aoe-02-uWM" secondAttribute="trailing" id="xa9-zj-CEU"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="256.5" y="181.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Voip-calling_hover" width="600" height="84"/>
+    </resources>
+</document>
